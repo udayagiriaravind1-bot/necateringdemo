@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu - North East Halal Catering</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .font-display { font-family: 'Georgia', 'serif'; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        .fade-in { animation: fadeIn 0.8s ease-out; }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-700 bg-gray-50">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div>
+                    <a href="index.html" class="text-2xl font-bold text-gray-800 font-display">
+                        North East Halal Catering
+                    </a>
+                </div>
+                
+                <div class="hidden md:flex space-x-6 items-center">
+                    <a href="index.html" class="text-gray-600 hover:text-amber-600 font-medium transition-all duration-300">Home</a>
+                    <a href="menu.html" class="text-amber-600 font-bold transition-all duration-300">Menu</a>
+                    <a href="gallery.html" class="text-gray-600 hover:text-amber-600 font-medium transition-all duration-300">Gallery</a>
+                    <a href="about.html" class="text-gray-600 hover:text-amber-600 font-medium transition-all duration-300">About Us</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-amber-600 font-medium transition-all duration-300">Contact</a>
+                    <a href="booking.html" class="bg-amber-600 text-white px-5 py-2 rounded-full font-medium hover:bg-amber-700 transition-all duration-300">
+                        Book Now
+                    </a>
+                </div>
+
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-800">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    </button>
+                </div>
+            </div>
+
+            <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-2">
+                <a href="index.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-50 rounded font-medium">Home</a>
+                <a href="menu.html" class="block px-4 py-2 text-amber-600 font-bold bg-gray-50 rounded">Menu</a>
+                <a href="gallery.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-50 rounded font-medium">Gallery</a>
+                <a href="about.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-50 rounded font-medium">About Us</a>
+                <a href="contact.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-50 rounded font-medium">Contact</a>
+                <a href="booking.html" class="block px-4 py-2 bg-amber-600 text-white rounded font-medium text-center transition-all duration-300">
+                    Book Now
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="fade-in">
+        <section class="bg-gray-700 py-20 text-white text-center" style="background-image: url('https://images.pexels.com/photos/1484678/pexels-photo-1484678.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); background-blend-mode: multiply; background-size: cover; background-position: center;">
+            <div class="container mx-auto px-6">
+                <h1 class="text-4xl md:text-5xl font-bold font-display">Our Culinary Offerings</h1>
+                <p class="text-xl text-gray-200 mt-2">Authentic dishes, prepared with the finest halal ingredients.</p>
+                <a href="#" class="mt-8 inline-block bg-amber-600 text-white px-8 py-3 rounded-full font-bold text-lg hover:bg-amber-700 transition-all duration-300">
+                    Download PDF Menu
+                </a>
+            </div>
+        </section>
+
+        <section class="py-20">
+            <div class="container mx-auto px-6">
+                <div>
+                    <h2 class="text-3xl font-bold font-display text-gray-800 mb-6 border-b-2 border-amber-600 pb-2">Starters</h2>
+                    <div class="grid md:grid-cols-2 gap-x-8 gap-y-6">
+                        <div class="flex justify-between gap-4"><div class="flex-grow"><h3 class="text-xl font-bold text-gray-900">Vegetable Samosas (3 pcs)</h3><p class="text-gray-600 text-sm">Crispy pastry filled with spiced potatoes and peas.</p></div><div class="flex-shrink-0"><p class="text-lg font-bold text-amber-700">£4.50</p></div></div>
+                        <div class="flex justify-between gap-4"><div class="flex-grow"><h3 class="text-xl font-bold text-gray-900">Lamb Seekh Kebab</h3><p class="text-gray-600 text-sm">Spiced minced lamb, skewered and cooked in the tandoor.</p></div><div class="flex-shrink-0"><p class="text-lg font-bold text-amber-700">£6.00</p></div></div>
+                        <div class="flex justify-between gap-4"><div class="flex-grow"><h3 class="text-xl font-bold text-gray-900">Chicken Tikka Bites</h3><p class="text-gray-600 text-sm">Boneless chicken pieces marinated in yoghurt and spices.</p></div><div class="flex-shrink-0"><p class="text-lg font-bold text-amber-700">£5.50</p></div></div>
+                    </div>
+                </div>
+
+                <div class="mt-16">
+                    <h2 class="text-3xl font-bold font-display text-gray-800 mb-6 border-b-2 border-amber-600 pb-2">Traditional Main Courses</h2>
+                    <div class="grid md:grid-cols-2 gap-x-8 gap-y-6">
+                        <div class="flex justify-between gap-4"><div class="flex-grow"><h3 class="text-xl font-bold text-gray-900">Chicken Korma</h3><p class="text-gray-600 text-sm">A mild, creamy curry cooked with almonds and coconut.</p></div><div class="flex-shrink-0"><p class="text-lg font-bold text-amber-700">£11.50</p></div></div>
+                        <div class="flex justify-between gap-4"><div class="flex-grow"><h3 class="text-xl font-bold text-gray-900">Signature Lamb Biryani</h3><p class="text-gray-600 text-sm">Tender lamb cooked with fragrant basmati rice and spices. Served with raita.</p></div><div class="flex-shrink-0"><p class="text-lg font-bold text-amber-700">£13.00</p></div></div>
+                        <div class="flex justify-between gap-4"><div class="flex-grow"><h3 class="text-xl font-bold text-gray-900">Paneer Tikka Masala (V)</h3><p class="text-gray-600 text-sm">Indian cottage cheese in a rich, spiced tomato and cream sauce.</p></div><div class="flex-shrink-0"><p class="text-lg font-bold text-amber-700">£10.50</p></div></div>
+                        <div class="flex justify-between gap-4"><div class="flex-grow"><h3 class="text-xl font-bold text-gray-900">Karahi Gosht (Spicy)</h3><p class="text-gray-600 text-sm">A rich lamb dish cooked in a traditional wok with tomatoes, ginger, and green chillies.</p></div><div class="flex-shrink-0"><p class="text-lg font-bold text-amber-700">£12.50</p></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-gray-300 py-12">
+        <div class="container mx-auto px-6 text-center text-gray-500 text-sm">
+            <p>© 2025 North East Halal Catering. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('mobile-menu-button').onclick = function() {
+            var menu = document.getElementById('mobile-menu');
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+            } else {
+                menu.classList.add('hidden');
+            }
+        };
+    </script>
+
+</body>
+</html>
